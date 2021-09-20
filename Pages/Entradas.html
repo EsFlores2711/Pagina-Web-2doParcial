@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+  <head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+  <TITLE>Libreria Progreso</TITLE>
+
+  <META name="description" content="Libreria Progreso">
+  <META name="keywords" content="Papeleria, Utiles Escolares, Oficina, ...">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+  <!-- GOOGLE FONTs -->
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="http://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../CSS/Style.css">
+
+  </head>
+
+  <body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+
+        <nav Class="menu">
+          <a style="text-decoration:none" href="../index.html"><label class="Logo">Libreria Progreso</label></a>
+          <ul class="menu_items">
+          <li><a href="../index.html"><strong>Inicio</strong></a></li>
+          <li><a href="Productos.html"><strong>Productos</strong></a></li>
+          <li><a href="Contacto.html"><strong>Contacto</strong></a></li>
+          <li class="active"><a  href="Ingreso" ><strong>Moviemientos</strong></a></li>
+          <li><a href="Login.html" ><strong>Login</strong></a></li>
+      </ul>
+      <span class="btn_menu">
+          <i class="fa fa-bars"></i>
+      </span>
+    </nav>
+
+
+       <!-- Definición del contenedor principal -->
+
+       <div class="container mt-5">
+        <h1><center>Movimiento de Salidas</center></h1>
+        <h2><center><strong>COMPRAS</strong></center></h2>
+        <form class="row g-25">
+          <div class="col-md-6">
+            <label for="cliente" class="form-label">Nombre del Proveedor</label>
+            <input type="text" class="form-control" id="cliente" required>
+          </div>
+          <div class="col-md-4">
+            <label for="fecha" class="form-label">Fecha de Compra</label>
+            <input type="date" class="form-control" id="fecha" required>
+          </div>
+          <form class="row g-3">
+            <div class="col-md-12">
+              <label for="tipo" class="form-label">Tipo de Movimiento</label>
+              <input type="text" class="form-control" id="tipo" style="width: 226px" required>
+            </div>
+          <div class="col-md-2">
+            <label for="codigo" class="form-label">Codigo</label>
+            <input type="number" class="form-control" id="codigo" required>
+          </div>
+          <div class="col-md-4">
+            <label for="producto" class="form-label">Nombre del Producto</label>
+            <input type="text" class="form-control" id="producto">
+          </div>
+          <div class="col-md-1">
+            <label for="cantidad" class="form-label">Cantidad</label>
+            <input type="number" class="form-control" id="cantidad" required>
+          </div>
+          <div class="col-md-1">
+            <label for="precio" class="form-label">Precio Q</label>
+            <input type="number" class="form-control" id="precio" style="width: 150px" required">
+          </div>
+          <div class="col-md-12">
+            <button type="button" class="btn btn-success" id="btnsave" style="width: 175px" >Guardar Compra</button>
+          </div>
+        </form>
+    </div>
+
+<br>
+    <div class="container">
+      <h2><strong>Mis Entradas / Compras</strong></h2>
+      <table class="table table-hover" id="tablaentradas">
+        <thead>
+          <tr>
+            <th>Proveedor</th>
+            <th>Fecha</th>
+            <th>Tipo de Movimiento</th>
+            <th>Codigo</th>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+            <th>Total</th>
+
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+    </div>
+
+    <button type="button" class="btn btn-success" id="btnsave" style="width: 150px" onclick="location.href='Ingreso.html'">Regresar a Movimientos</button>
+    
+            <div class="contenedor">
+              <!-- Definición del pie de página -->
+              <footer class="footer">
+                  <h4><center>Copyright © 2021<br> Todos Los Derechos Reservados.</center></h4>
+              </footer>
+          </div>
+          
+          <!-- Ir hacia arriba -->
+          <div class="go-top-container">
+              <div class="go-top-button">
+                  <i class="fa fa-chevron-up"></i>
+              </div>
+          </div>
+
+      <!-- JS -->
+      <script src="../JS/BussinesLogic  - Compras.js"></script>
+      <script src="../JS/uiLogic - Compras.js"></script>
+      <script src="../JS/Script.js"></script>
+
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+  </body>
+
+</html>

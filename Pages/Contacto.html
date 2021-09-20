@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+    <head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+    <TITLE>Libreria Progreso</TITLE>
+
+    <META name="description" content="Libreria Progreso">
+    <META name="keywords" content="Papeleria, Utiles Escolares, Oficina, ...">
+
+    <!-- GOOGLE FONTs -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="http://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/Style.css">
+
+    </head>
+
+    <body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+
+    <nav Class="menu">
+        <a style="text-decoration:none" href="../index.html"><label class="Logo">Libreria Progreso</label></a>
+        <ul class="menu_items">
+            <li><a href="../index.html"><strong>Inicio</strong></a></li>
+            <li><a href="Productos.html"><strong>Productos</strong></a></li>
+            <li class="active"><a href="Contacto.html"><strong>Contacto</strong></a></li>
+            <li><a href="Ingreso.html" ><strong>Moviemientos</strong></a></li>
+            <li><a href="Login.html" ><strong>Login</strong></a></li>
+        </ul>
+        <span class="btn_menu">
+            <i class="fa fa-bars"></i>
+        </span>
+    </nav>
+
+    <!-- SECCIÓN DE CONTACTO -->
+
+    <div class="container_contact">
+        <form action="https://formspree.io/f/xyylojyq" method="POST" id="my-form">
+            <div class="contact-box">
+                <div class="left"></div>
+                <div class="right">
+                    <h1 class="h1_conatacto">Contactame</h1>
+                    <br>
+                    <input type="text" name="Nombre" class="field" placeholder="Nombre" required>
+                    <input type="text" name="Email" class="field" placeholder="Correo Electrónico" required>
+                    <input type="text" name="Telefono"class="field" placeholder="Teléfono"  required>
+                    <textarea placeholder="Mensaje" name="Mensaje" class="field" required></textarea>
+                    <button class="btn"><strong>Enviar</strong></button>
+                </div>
+            </div>
+        </form>
+        
+        <div id="status"></div>
+    </div>
+
+    <div class="contenedor">
+        <!-- Definición del pie de página -->
+        <footer class="footer">
+            <h4><center>Copyright © 2021<br> Todos Los Derechos Reservados.</center></h4>
+        </footer>
+    </div>
+
+    <!-- Ir hacia arriba -->
+    <div class="go-top-container">
+        <div class="go-top-button">
+            <i class="fa fa-chevron-up"></i>
+        </div>
+    </div>
+
+        <!-- JS -->
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="../JS/Script.js"></script>
+
+    </body>
+
+</html>
